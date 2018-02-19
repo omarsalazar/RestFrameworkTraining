@@ -50,14 +50,14 @@ class UserProfile(AbstractBaseUser, PermissionsMixin):
     def get_full_name(self):
         """Used to get a users full name."""
 
-    return self.name
+        return self.name
 
     def get_short_name(self):
         """Used to get a users short name."""
 
-    return self.name
+        return self.name
 
     def __str__(self):
         """Django uses this when it needs to convert the object to a string"""
 
-    return self.email
+        return self.email
